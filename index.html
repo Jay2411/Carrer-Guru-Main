@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career Guru</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+
+
+</head>
+
+<body>
+  <div class="svg-wrap">
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <path id="arrow-left"
+        d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z">
+      </path>
+    </svg>
+
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <path id="arrow-right"
+        d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z">
+      </path>
+    </svg>
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+
+  <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!-- /.navbar-header -->
+          
+          <div class="collapse navbar-collapse" id="menu">
+            <img src="images/logo.png" alt="logo" style="width:50px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Courses</a></li>
+              <li><a href="#team">Team</a></li>
+              <!-- <li><a href="#info">Info</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60"
+              preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z" />
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>We are helping for your achivments</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+          var dataHeader = [
+            {
+              bigImage: "images/slide-1.jpg",
+              title: "Career Guru"
+            },
+            {
+              bigImage: "images/slide-2.jpg",
+              title: "Your courses"
+            },
+            {
+              bigImage: "images/slide-3.jpg",
+              title: "Achieve Success"
+            }
+          ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), { speedIn: 450, speedOut: 450, easingIn: mina.easeinout });
+          loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About</h2>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Clean Code</h4>
+                  <p>Clean code is subjective and every developer has a personal take on it. There are some ideas that are considered best practice and what constitutes as clean code within the industry and community</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Fully Responsive</h4>
+                  <p>Responsive Web design is the approach that suggests that design and development should respond to the user’s behavior and environment based on screen size, platform and orientation.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Multipurpose Design</h4>
+                  <p>This website is created by multiple purposes</p>
+                  <p>To guidence for students carrer</p>
+                  <p>All the available courses for students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Courses</h2>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">All</li>
+            <li data-filter=".after-10th" class="filter">after-10th</li>
+            <li data-filter=".in_11-12" class="filter">11th-12th</li>
+            <li data-filter=".after-12th" class="filter">after-12th</li>
+            <li data-filter=".after-diploma" class="filter">after-diploma</li>
+            <li data-filter=".types-degree" class="filter">all-degrees</li>
+            <li data-filter=".after-degree" class="filter">after-degree</li>
+            <li data-filter=".after-master" class="filter">after-master</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+              var portfolio = [
+                {
+                  category: "after-10th",
+                  image: "images/p-1.png",
+                  title: "BE_<span>Attentive</span>",
+                  link: "study1.html",
+                  text: "11th-12th"
+                },
+                {
+                  category: "after-12th",
+                  image: "images/p-2.png",
+                  title: "Work_<span>hard</span>",
+                  link: "study2.html",
+                  text: "Degree"
+                },
+                {
+                  category: "after-10th",
+                  image: "images/p-3.png",
+                  title: "study_<span>master</span>",
+                  link: "study3.html",
+                  text: "Diploma"
+                },
+                {
+                  category: "after-diploma",
+                  image: "images/p-4.png",
+                  title: "push_<span>onself</span>",
+                  link: "study4.html",
+                  text: "Diploma to degree"
+                },
+                {
+                  category: "after-degree",
+                  image: "images/p-5.png",
+                  title: "Give_your_<span>All</span>",
+                  link: "study5.html",
+                  text: "master"
+                },
+                {
+                  category: "after-master",
+                  image: "images/p-6.png",
+                  title: "<span>aim</span>",
+                  link: "study6.html",
+                  text: "PHD"
+                },
+                {
+                  category: "types-degree",
+                  image: "images/p-7.png",
+                  title: "total_<span>effort</span>",
+                  link: "study7.html",
+                  text: "All degrees"
+                },
+                {
+                  category: "in_11-12",
+                  image: "images/p-8.png",
+                  title: "get_<span>cracking</span>",
+                  link: "study8.html",
+                  text: "types of 11-12"
+                }
+              ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2>Team <span>US</span></h2>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team-1.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Dipen Patel</h3>
+              <h5><b>Team Leader</b></h5>
+
+              <p>A team leader is a person who provides guidance, instruction, direction and leadership to a group of individuals for the purpose of achieving a key result or group of aligned results.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/dipen_patel2241/" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team-2.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Jay Patel</h3>
+              <h5><b>Developer</b></h5>
+
+              <p>A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/mr_jay.patel" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team-3.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Sapana Patel</h3>
+              <h5><b>Creative Director</b></h5>
+
+              <p>A creative director is a position often found within the graphic design, video game, media or entertainment industries, but may be useful in other creative organizations such as web development and software development firms as well.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/_sa_na_7717/" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team-4.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Dhruvee Patel</h3>
+              <h5><b>website manager</b></h5>
+
+              <p>Website Managers are IT specialists who help organizations by managing their website. They oversee the functionality of the website, evaluate and manage website performance, facilitate hosting and server management, and develop, maintain and update website content.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/dhruvee2911/" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team-5.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Harsh Prajapati</h3>
+              <h5><b>viewer</b></h5>
+
+              <p>Viewer was check the quality of website and give the feedback for update the website.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/jigs____111/" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="43"></span>
+                <small>Clients</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="20"></span>
+                <small>Awards</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="34"></span>
+                <small>Projects</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="1298"></span>
+                <small>Mail</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+    <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>Us</span></h2>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="Tell Us Everything"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">SEND</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+              <span><i class="fa fa-map-marker fa-lg"></i>Mehsana, Gujarat, india</span>
+              <span><i class="fa fa-phone fa-lg"></i> +91 96xx46xx66</span>
+              <span><i class="fa fa-envelope-o fa-lg"></i> <a
+                  href="mailto:contact@example.com">CareerGuru&#64;gmail.com</a></span>
+              <span><i class="fa fa-globe fa-lg"></i> <a
+                  href="http://support.example.com">support us</a></span>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Made BY Team <span><b>US</b></span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.container-fluid -->
+
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

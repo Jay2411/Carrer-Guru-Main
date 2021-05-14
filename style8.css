@@ -1,0 +1,30 @@
+body{
+    background-image: url('images/p-8.png');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+button{
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all;
+    padding: 10px 30px 13px 30px;
+    background-color: rgb(202, 202, 202);
+    margin-left: 900px;
+}
+
+button:hover{
+    color: #fff;
+    border-color: rgb(47, 60, 75);
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
